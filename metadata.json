@@ -1,0 +1,6 @@
+{
+  "name": "SENTINEL-X — Autonomous AI Incident Commander",
+  "description": "Autonomous AI cybersecurity incident response agent using Gemini structured tool calling to observe, investigate, mitigate, adapt to failures, and resolve security threats.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

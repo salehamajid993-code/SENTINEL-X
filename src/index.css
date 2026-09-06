@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #0a0a0c;
+  --card: #111114;
+  --card-inner: #16161c;
+  --border: #23232a;
+  --accent: #3b82f6;
+  --success: #10b981;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+  --text-main: #e2e8f0;
+  --text-dim: #94a3b8;
+}
+
+@theme {
+  --font-mono: 'JetBrains Mono', 'Courier New', Courier, monospace;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Plus Jakarta Sans', sans-serif;
+  --font-display: 'Inter', sans-serif;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text-main);
+}
+
+.glass {
+  background: rgba(17, 17, 20, 0.85);
+  border: 1px solid var(--border);
+}
+
+.status-pulse {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--success);
+  display: inline-block;
+  box-shadow: 0 0 8px var(--success);
+}
+
+.status-pulse-amber {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--warning);
+  display: inline-block;
+  box-shadow: 0 0 8px var(--warning);
+}
+
+.tag {
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
+/* Sleek subtle grid */
+.bg-grid-pattern {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(35, 35, 42, 0.4) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(35, 35, 42, 0.4) 1px, transparent 1px);
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #0d0d10;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #23232a;
+  border-radius: 2px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #3b82f6;
+}
